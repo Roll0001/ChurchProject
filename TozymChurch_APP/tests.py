@@ -1,9 +1,12 @@
+from datetime import date
+
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
-from django.utils.translation import override
+from django.utils.translation import override, gettext
 
 from .models import church_schedule
+from .views import MONTHS
 
 # Create your tests here.
 
@@ -61,3 +64,9 @@ class ScheduleCreationTests(TestCase):
 
 		with override('pl'):
 			self.assertEqual(event.localized_title, 'Nabożeństwo z akatystem')
+
+	def test_schedule_month_is_translated(self):
+		with override('pl'):
+			response = self.client.get(reverse('schedule'))
+
+		self.assertContains(response, gettext(MONTHS[date.today().month]))
