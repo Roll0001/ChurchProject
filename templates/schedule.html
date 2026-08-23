@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% translate "Розклад" %} | {% translate "Тожимська православна церква" %}{% endblock %}
+
+{% block content %}
+
+  
+
+<section class="full-schedule">
+    <div class="schedule-heading">
+        <div>
+            <span class="section-kicker">&#9962; {% translate "Богослужіння" %}</span>
+            <h2>{% translate "Розклад літургій на" %} {{ month_name }} {{ year }}</h2>
+        </div>
+        {% if user.is_authenticated %}
+            <a href="{% url 'add_schedule_event' %}" class="btn btn-primary add-event-btn">&#43; {% translate "Додати подію" %}</a>
+        {% endif %}
+    </div>
+    
+    <div class="month-header" style="justify-content: flex-start; gap: 16px;">
+        <span>&#128197; {{ month_name }}</span>
+        <span>{{ year }}</span>
+    </div>
+
+    {% if events %}
+        <div class="schedule-grid">
+            {% for event in events %}
+                <div class="schedule-item">
+                    <div class="schedule-date">&#128197; {{ event.date|date:'d.m.Y' }}</div>
+                    {% if event.localized_weekday %}<div class="event-weekday">{{ event.localized_weekday }}</div>{% endif %}
+                    {% if event.localized_holiday %}<div class="event-holiday">&#10024; {{ event.localized_holiday }}</div>{% endif %}
+                    {% if event.localized_service_type %}<div class="event-service">&#9962; {{ event.localized_service_type }}</div>{% endif %}
+                    <div class="schedule-title">&#9962; {{ event.localized_title }}</div>
+                    {% if event.time %}
+                        <div class="event-time">&#128336; {{ event.time|time:'H:i' }}</div>
+                    {% endif %}
+                    {% if event.localized_description %}
+                        <div class="event-description">{{ event.localized_description }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="empty-state">{% translate "У цьому місяці ще немає запланованих подій." %}</p>
+    {% endif %}
+</section>
+{% endblock %}

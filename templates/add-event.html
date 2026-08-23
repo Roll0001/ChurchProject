@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% translate "Нова подія" %} | {% translate "Тожимська православна церква" %}{% endblock %}
+
+{% block content %}
+<section class="section form-page">
+	<header class="form-page-header">
+		<span class="section-kicker">&#9962; {% translate "Парафіяльний календар" %}</span>
+		<h1>{% translate "Додати подію" %}</h1>
+		<p>{% translate "Заповніть дані про богослужіння, зустріч або іншу подію громади." %}</p>
+	</header>
+
+	<form method="post" class="schedule-form">
+		{% csrf_token %}
+		{{ form.non_field_errors }}
+		<div class="form-fields">
+			{% for field in form %}
+				<label class="form-field" for="{{ field.id_for_label }}">
+					<span>{% if field.name == 'service_type' %}&#9962; {% endif %}{{ field.label }}</span>
+					{{ field }}
+					{% for error in field.errors %}<small class="field-error">{{ error }}</small>{% endfor %}
+				</label>
+			{% endfor %}
+		</div>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary">{% translate "Зберегти подію" %}</button>
+			<a href="{% url 'schedule' %}" class="back-link">{% translate "Скасувати" %}</a>
+		</div>
+	</form>
+</section>
+{% endblock %}

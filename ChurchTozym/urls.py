@@ -15,8 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+from TozymChurch_APP import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
+    path('i18n/', include('django.conf.urls.i18n')),
+    path('', views.home, name='home'),
+    path('information/', views.information, name='information'),
+    path('schedule/', views.schedule, name='schedule'),
+    path('schedule/add/', views.add_schedule_event, name='add_schedule_event'),
+        path('', include('auth_system.urls')),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

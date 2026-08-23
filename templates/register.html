@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% translate "Створення акаунта" %} | {% translate "Тожимська православна церква" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow">
+                <div class="card-body p-5">
+                    <h2 class="text-center mb-3">{% translate "Створення акаунта" %}</h2>
+                    <p class="text-center text-muted mb-4">{% translate "Створіть акаунт, щоб додавати події до розкладу" %}</p>
+
+                    {% if form.errors %}
+                        <div class="alert alert-danger" role="alert">
+                            <h6 class="mb-2"><i class="fas fa-exclamation-circle"></i> {% translate "Будь ласка, виправте помилки" %}</h6>
+                            {% for field, errors in form.errors.items %}
+                                {% for error in errors %}
+                                    <div>• {{ error }}</div>
+                                {% endfor %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                    <form method="post" action="{% url 'register' %}" novalidate>
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label for="id_username" class="form-label">{% translate "Ім'я користувача" %}</label>
+                            <input
+                                name="username"
+                                type="text"
+                                class="form-control {% if form.username.errors %}is-invalid{% endif %}"
+                                id="id_username"
+                                value="{{ form.username.value|default:'' }}"
+                                placeholder="{% translate 'Введіть логін' %}"
+                                required
+                            >
+                            {% if form.username.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {{ form.username.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="id_password1" class="form-label">{% translate "Пароль" %}</label>
+                            <input
+                                name="password1"
+                                type="password"
+                                class="form-control {% if form.password1.errors %}is-invalid{% endif %}"
+                                id="id_password1"
+                                placeholder="{% translate 'Придумайте надійний пароль' %}"
+                                required
+                            >
+                            {% if form.password1.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {{ form.password1.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="id_password2" class="form-label">{% translate "Підтвердження пароля" %}</label>
+                            <input
+                                name="password2"
+                                type="password"
+                                class="form-control {% if form.password2.errors %}is-invalid{% endif %}"
+                                id="id_password2"
+                                placeholder="{% translate 'Повторіть пароль' %}"
+                                required
+                            >
+                            {% if form.password2.errors %}
+                                <div class="invalid-feedback d-block">
+                                    {{ form.password2.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2 mb-3">
+                            {% translate "Зареєструватися" %}
+                        </button>
+
+                        <div class="text-center">
+                            <p class="text-muted mb-0">
+                                {% translate "Вже є акаунт?" %}
+                                <a href="{% url 'login' %}" class="text-decoration-none fw-bold">{% translate "Увійти" %}</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 12px;
+    }
+
+    .form-control:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+
+    .btn-primary {
+        background-color: #0d6efd;
+        border: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>
+{% endblock %}

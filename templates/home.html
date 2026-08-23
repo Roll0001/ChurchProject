@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% translate "Головна" %} | {% translate "Тожимська православна церква" %}{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="hero-wrapper">
+    <section class="section hero">
+        
+        <div class="hero-content">
+            {% get_media_prefix as media_prefix %}
+            <img class="hero-photo" src="{{ media_prefix }}Tozym.jpg" alt="{% translate 'Православна парафія в Тожимі' %}">
+            <div class="cta-row">
+                  
+                <a href="{% url 'schedule' %}" class="btn btn-primary">{% translate "Подивитися розклад" %}</a>
+                <a href="{% url 'information' %}" class="btn btn-secondary">{% translate "Дізнатися більше" %}</a>
+                <a href="{% url 'login' %}" class="btn btn-secondary">{% translate "Вхід" %}</a>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <aside class="section schedule-card">
+        <h2>{% translate "Літургії" %}</h2>
+        {% if events %}
+            <ul class="event-list">
+                {% for event in events %}
+                    <li>
+                        <div class="event-date">{{ event.date|date:'d.m.Y' }}</div>
+                        {% if event.localized_holiday %}<div class="event-holiday">{{ event.localized_holiday }}</div>{% endif %}
+                        {% if event.localized_service_type %}<div class="event-service">{{ event.localized_service_type }}</div>{% endif %}
+                        <span class="event-title">{{ event.localized_title }}</span>
+                        {% if event.time %}<div class="event-time">{{ event.time|time:'H:i' }}</div>{% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="empty-state">{% translate "На цей місяць поки немає запланованих богослужінь." %}</p>
+        {% endif %}
+        <a href="{% url 'schedule' %}" class="more-btn">{% translate "Більше" %}</a>
+    </aside>
+</div>
+
+
+{% endblock %}
