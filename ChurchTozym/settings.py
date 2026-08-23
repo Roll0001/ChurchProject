@@ -141,3 +141,42 @@ MAILERS = {
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+
+import os
+import dj_database_url
+
+# Секретний ключ через змінну середовища
+SECRET_KEY = os.environ.get('SECRET_KEY', 'твій-старий-ключ-для-локальної-розробки')
+
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+
+ALLOWED_HOSTS = ['.onrender.com', 'твійдомен.com']  # додай свій домен, якщо є
+
+# Статичні файли
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # одразу після SecurityMiddleware
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    # ... решта
+]
+
+# База даних (Render дає PostgreSQL безкоштовно)
+DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL', 'sqlite:///' + str(BASE_DIR / 'db.sqlite3'))
+    )
+}
+
+CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com', 'https://твійдомен.com']
