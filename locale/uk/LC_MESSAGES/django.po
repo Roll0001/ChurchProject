@@ -1,162 +1,427 @@
 msgid ""
 msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-24 02:26+0300\n"
 "Language: uk\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-msgid "Виберіть богослужіння"
-msgstr "Виберіть богослужіння"
-msgid "Божественна літургія"
-msgstr "Божественна літургія"
-msgid "Молебень з акафістом"
-msgstr "Молебень з акафістом"
-msgid "Молебень"
-msgstr "Молебень"
-msgid "Вечірня"
-msgstr "Вечірня"
-msgid "Утреня"
-msgstr "Утреня"
-msgid "Сповідь"
-msgstr "Сповідь"
-msgid "Панахида"
-msgstr "Панахида"
-msgid "Молитовне правило"
-msgstr "Молитовне правило"
-msgid "Парафіяльна зустріч"
-msgstr "Парафіяльна зустріч"
 
+#: .\TozymChurch_APP\forms.py:14 .\TozymChurch_APP\models.py:45
+msgid "Дата"
+msgstr "Дата"
+
+#: .\TozymChurch_APP\forms.py:15 .\TozymChurch_APP\models.py:49
+msgid "Час"
+msgstr "Час"
+
+#: .\TozymChurch_APP\forms.py:16 .\TozymChurch_APP\models.py:58
+msgid "День тижня"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:17 .\TozymChurch_APP\models.py:70
+#: .\templates\schedule.html:13
+msgid "Богослужіння"
+msgstr "Богослужіння"
+
+#: .\TozymChurch_APP\forms.py:18 .\TozymChurch_APP\models.py:64
+msgid "Свято"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:19 .\TozymChurch_APP\models.py:75
+msgid "Назва"
+msgstr "Назва"
+
+#: .\TozymChurch_APP\forms.py:20 .\TozymChurch_APP\models.py:79
+msgid "Опис"
+msgstr "Опис"
+
+#: .\TozymChurch_APP\forms.py:28
+msgid "Необов’язково, якщо вибрано свято або богослужіння"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:29
+msgid "Додаткова інформація (необов’язково)"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:35
+#, fuzzy
+#| msgid "Виберіть богослужіння"
+msgid "Введіть назву або виберіть богослужіння чи свято."
+msgstr "Виберіть богослужіння"
+
+#: .\TozymChurch_APP\models.py:10
 msgid "Понеділок"
 msgstr "Понеділок"
+
+#: .\TozymChurch_APP\models.py:11
 msgid "Вівторок"
 msgstr "Вівторок"
+
+#: .\TozymChurch_APP\models.py:12
 msgid "Середа"
 msgstr "Середа"
+
+#: .\TozymChurch_APP\models.py:13
 msgid "Четвер"
 msgstr "Четвер"
+
+#: .\TozymChurch_APP\models.py:14
 msgid "П'ятниця"
 msgstr "П'ятниця"
+
+#: .\TozymChurch_APP\models.py:15
 msgid "Субота"
 msgstr "Субота"
+
+#: .\TozymChurch_APP\models.py:16
 msgid "Неділя"
 msgstr "Неділя"
+
+#: .\TozymChurch_APP\models.py:19
 msgid "Без свята"
 msgstr "Без свята"
+
+#: .\TozymChurch_APP\models.py:20
 msgid "Різдво Христове"
 msgstr "Різдво Христове"
+
+#: .\TozymChurch_APP\models.py:21
 msgid "Богоявлення"
 msgstr "Богоявлення"
+
+#: .\TozymChurch_APP\models.py:22
 msgid "Благовіщення"
 msgstr "Благовіщення"
+
+#: .\TozymChurch_APP\models.py:23
 msgid "Вербна неділя"
 msgstr "Вербна неділя"
+
+#: .\TozymChurch_APP\models.py:24
 msgid "Великдень"
 msgstr "Великдень"
+
+#: .\TozymChurch_APP\models.py:25
 msgid "Вознесіння Господнє"
 msgstr "Вознесіння Господнє"
+
+#: .\TozymChurch_APP\models.py:26
 msgid "П'ятидесятниця"
 msgstr "П'ятидесятниця"
+
+#: .\TozymChurch_APP\models.py:27
 msgid "Преображення Господнє"
 msgstr "Преображення Господнє"
+
+#: .\TozymChurch_APP\models.py:28
 msgid "Успіння Богородиці"
 msgstr "Успіння Богородиці"
+
+#: .\TozymChurch_APP\models.py:29
 msgid "Собор Архангела Михаїла"
 msgstr "Собор Архангела Михаїла"
 
-msgid "Головна"
-msgstr "Головна"
-msgid "Інформація"
-msgstr "Інформація"
-msgid "Розклад"
-msgstr "Розклад"
-msgid "Церква Тозим"
-msgstr "Церква Тозим"
-msgid "Подивитися розклад"
-msgstr "Подивитися розклад"
-msgid "Дізнатися більше"
-msgstr "Дізнатися більше"
-msgid "Вхід"
-msgstr "Вхід"
-msgid "Літургії"
-msgstr "Літургії"
-msgid "Богослужіння"
-msgstr "Богослужіння"
-msgid "Розклад літургій на"
-msgstr "Розклад літургій на"
-msgid "Додати подію"
-msgstr "Додати подію"
+#: .\TozymChurch_APP\models.py:32
+msgid "Виберіть богослужіння"
+msgstr "Виберіть богослужіння"
+
+#: .\TozymChurch_APP\models.py:33
+msgid "Божественна літургія"
+msgstr "Божественна літургія"
+
+#: .\TozymChurch_APP\models.py:34
+msgid "Молебень з акафістом"
+msgstr "Молебень з акафістом"
+
+#: .\TozymChurch_APP\models.py:35
+msgid "Молебень"
+msgstr "Молебень"
+
+#: .\TozymChurch_APP\models.py:36
+msgid "Вечірня"
+msgstr "Вечірня"
+
+#: .\TozymChurch_APP\models.py:37
+msgid "Утреня"
+msgstr "Утреня"
+
+#: .\TozymChurch_APP\models.py:38
+msgid "Сповідь"
+msgstr "Сповідь"
+
+#: .\TozymChurch_APP\models.py:39
+msgid "Панахида"
+msgstr "Панахида"
+
+#: .\TozymChurch_APP\models.py:40
+msgid "Молитовне правило"
+msgstr "Молитовне правило"
+
+#: .\TozymChurch_APP\models.py:41
+msgid "Парафіяльна зустріч"
+msgstr "Парафіяльна зустріч"
+
+#: .\TozymChurch_APP\models.py:46
+msgid "День, коли відзначається подія"
+msgstr ""
+
+#: .\TozymChurch_APP\models.py:50
+#, fuzzy
+#| msgid "Преображення Господнє"
+msgid "Час проведення події"
+msgstr "Преображення Господнє"
+
+#: .\TozymChurch_APP\models.py:76
+msgid "Наприклад: 'Новий рік', 'День народження' тощо"
+msgstr ""
+
+#: .\TozymChurch_APP\models.py:81
+msgid "Детальніший опис події (необов'язково)"
+msgstr ""
+
+#: .\TozymChurch_APP\models.py:84
+#, fuzzy
+#| msgid "Нова подія"
+msgid "Подія"
+msgstr "Нова подія"
+
+#: .\TozymChurch_APP\models.py:85
+msgid "Події"
+msgstr ""
+
+#: .\templates\add-event.html:4
 msgid "Нова подія"
 msgstr "Нова подія"
-msgid "Парафіяльний календар"
-msgstr "Парафіяльний календар"
-msgid "Зберегти подію"
-msgstr "Зберегти подію"
-msgid "Скасувати"
-msgstr "Скасувати"
-msgid "У цьому місяці ще немає запланованих подій."
-msgstr "У цьому місяці ще немає запланованих подій."
-msgid "На цей місяць поки немає запланованих богослужінь."
-msgstr "На цей місяць поки немає запланованих богослужінь."
-msgid "Більше"
-msgstr "Більше"
-msgid "Інформація про громаду"
-msgstr "Інформація про громаду"
-msgid "Молитовна служба"
-msgstr "Молитовна служба"
-msgid "Для сімей"
-msgstr "Для сімей"
-msgid "Громадська допомога"
-msgstr "Громадська допомога"
-msgid "Вхід до системи"
-msgstr "Вхід до системи"
-msgid "Пароль"
-msgstr "Пароль"
-msgid "Увійти"
-msgstr "Увійти"
-msgid "Ім'я користувача"
-msgstr "Ім'я користувача"
-msgid "Немаєте акаунту?"
-msgstr "Немаєте акаунту?"
-msgid "Зареєструйтеся"
-msgstr "Зареєструйтеся"
-msgid "Створення акаунта"
-msgstr "Створення акаунта"
-msgid "Зареєструватися"
-msgstr "Зареєструватися"
-msgid "Мова"
-msgstr "Мова"
+
+#: .\templates\add-event.html:4 .\templates\base.html:8
+#: .\templates\base.html:542 .\templates\home.html:4
+#: .\templates\information.html:4 .\templates\login.html:4
+#: .\templates\register.html:4 .\templates\schedule.html:4
 msgid "Тожимська православна церква"
 msgstr "Тожимська православна церква"
-msgid "Назва польською"
-msgstr "Назва польською"
-msgid "Назва російською"
-msgstr "Назва російською"
-msgid "Назва німецькою"
-msgstr "Назва німецькою"
-msgid "Назва англійською"
-msgstr "Назва англійською"
-msgid "Опис польською"
-msgstr "Опис польською"
-msgid "Опис російською"
-msgstr "Опис російською"
-msgid "Опис німецькою"
-msgstr "Опис німецькою"
-msgid "Опис англійською"
-msgstr "Опис англійською"
-msgid "Дата"
-msgstr "Дата"
-msgid "Час"
-msgstr "Час"
-msgid "Назва"
-msgstr "Назва"
-msgid "Опис"
-msgstr "Опис"
+
+#: .\templates\add-event.html:9
+msgid "Парафіяльний календар"
+msgstr "Парафіяльний календар"
+
+#: .\templates\add-event.html:10 .\templates\schedule.html:17
+msgid "Додати подію"
+msgstr "Додати подію"
+
+#: .\templates\add-event.html:11
 msgid "Заповніть дані про богослужіння, зустріч або іншу подію громади."
 msgstr "Заповніть дані про богослужіння, зустріч або іншу подію громади."
-msgid "Створіть акаунт, щоб додавати події до розкладу"
-msgstr "Створіть акаунт, щоб додавати події до розкладу"
+
+#: .\templates\add-event.html:27
+msgid "Зберегти подію"
+msgstr "Зберегти подію"
+
+#: .\templates\add-event.html:28
+msgid "Скасувати"
+msgstr "Скасувати"
+
+#: .\templates\base.html:544 .\templates\home.html:4
+msgid "Головна"
+msgstr "Головна"
+
+#: .\templates\base.html:545 .\templates\information.html:4
+msgid "Інформація"
+msgstr "Інформація"
+
+#: .\templates\base.html:546 .\templates\schedule.html:4
+msgid "Розклад"
+msgstr "Розклад"
+
+#: .\templates\base.html:548
+msgid "Мова"
+msgstr "Мова"
+
+#: .\templates\base.html:570
+msgid "Православна парафія на честь святого Архангела Михаїла"
+msgstr ""
+
+#: .\templates\base.html:571
+msgid "Torzym, Polska"
+msgstr ""
+
+#: .\templates\base.html:575
+msgid "Номери банківських рахунків"
+msgstr ""
+
+#: .\templates\base.html:583
+msgid "Контакти"
+msgstr ""
+
+#: .\templates\base.html:584
+msgid "ul. Sulęcińska 8, 66-235 Torzym, Polska."
+msgstr ""
+
+#: .\templates\base.html:585
+msgid "Телефон"
+msgstr ""
+
+#: .\templates\home.html:15
+msgid "Православна парафія в Тожимі"
+msgstr ""
+
+#: .\templates\home.html:18
+msgid "Подивитися розклад"
+msgstr "Подивитися розклад"
+
+#: .\templates\home.html:19
+msgid "Дізнатися більше"
+msgstr "Дізнатися більше"
+
+#: .\templates\home.html:20 .\templates\login.html:4
+msgid "Вхід"
+msgstr "Вхід"
+
+#: .\templates\home.html:28
+msgid "Літургії"
+msgstr "Літургії"
+
+#: .\templates\home.html:42
+msgid "На цей місяць поки немає запланованих богослужінь."
+msgstr "На цей місяць поки немає запланованих богослужінь."
+
+#: .\templates\home.html:44
+msgid "Більше"
+msgstr "Більше"
+
+#: .\templates\information.html:8
+msgid "Інформація про громаду"
+msgstr "Інформація про громаду"
+
+#: .\templates\information.html:11
+msgid ""
+"Православна парафія святого Архангела Михаїла в Тожимі виникла у 1948 році "
+"внаслідок примусового переселення українців та лемків із їхніх етнічних "
+"земель під час військово-політичної акції «Вісла» 1947 року. Опинившись на "
+"заході Польщі, депортовані віряни отримали покинуту німецьку протестантську "
+"цвинтарну каплицю XIX століття та самотужки переобладнали її під східний "
+"обряд, виготовивши перший скромний іконостас."
+msgstr ""
+
+#: .\templates\information.html:14
+msgid ""
+"Протягом другої половини XX століття громада розвивала свій храм: у 1982 "
+"році до нього добудували притвор для надання традиційних архітектурних "
+"обрисів, згодом встановили історичний іконостас із міста Гожув-"
+"Велькопольський, а у 1994 році провели капітальний ремонт будівлі."
+msgstr ""
+
+#: .\templates\information.html:17
+msgid ""
+"Нова сторінка в житті громади розпочалася на початку XXI століття, коли "
+"душпастирську опіку над нею перейняв священник Михайло Миколайович Коваль "
+"(ks. Michał Koval). Попри те, що парафія залишалася малочисельною, завдяки "
+"зусиллям та самовідданій праці отця Михайла релігійне життя тут помітно "
+"активізувалося."
+msgstr ""
+
+#: .\templates\information.html:20
+msgid ""
+"Саме за його служіння у 2008 році громада урочисто відзначила свій 60-річний "
+"ювілей, за що отримала похвальну грамоту від архієпископа, а сам священник "
+"налагодив тісну співпрацю з місцевою польською владою. Згодом отець Михайло "
+"також очолив будівництво нового православного храму в прикордонному місті "
+"Слубіце."
+msgstr ""
+
+#: .\templates\information.html:23
+msgid ""
+"Наступником отця Михайла на посаді настоятеля парафії став священник Даріуш "
+"Цьолка (ks. Dariusz Ciołka). Новий настоятель гідно продовжив справу свого "
+"попередника, зосередившись на збереженні духовної спадщини перших "
+"переселенців, подальшому впорядкуванні храму та духовній підтримці місцевої "
+"громади."
+msgstr ""
+
+#: .\templates\information.html:26
+msgid ""
+"Сьогодні ця історична парафія належить до Зеленогурського деканату "
+"Вроцлавсько-Щецинської єпархії та залишається важливим символом збереження "
+"віри, культури й стійкості духу людей, які колись пережили трагедію "
+"депортації."
+msgstr ""
+
+#: .\templates\login.html:12
+msgid "Вхід до системи"
+msgstr "Вхід до системи"
+
+#: .\templates\login.html:25
+msgid "Помилка входу"
+msgstr ""
+
+#: .\templates\login.html:40 .\templates\register.html:30
+msgid "Ім'я користувача"
+msgstr "Ім'я користувача"
+
+#: .\templates\login.html:48
+#, fuzzy
+#| msgid "Введіть логін"
+msgid "Введіть ім\\"
+msgstr "Введіть логін"
+
+#: .\templates\login.html:62 .\templates\register.html:48
+msgid "Пароль"
+msgstr "Пароль"
+
+#: .\templates\login.html:70
 msgid "Введіть пароль"
 msgstr "Введіть пароль"
+
+#: .\templates\login.html:90
+msgid "Запам'ятати мене"
+msgstr ""
+
+#: .\templates\login.html:96 .\templates\register.html:88
+msgid "Увійти"
+msgstr "Увійти"
+
+#: .\templates\register.html:4 .\templates\register.html:12
+msgid "Створення акаунта"
+msgstr "Створення акаунта"
+
+#: .\templates\register.html:13
+msgid "Створіть акаунт, щоб додавати події до розкладу"
+msgstr "Створіть акаунт, щоб додавати події до розкладу"
+
+#: .\templates\register.html:17
+msgid "Будь ласка, виправте помилки"
+msgstr ""
+
+#: .\templates\register.html:37
 msgid "Введіть логін"
 msgstr "Введіть логін"
+
+#: .\templates\register.html:54
 msgid "Придумайте надійний пароль"
 msgstr "Придумайте надійний пароль"
+
+#: .\templates\register.html:65
+#, fuzzy
+#| msgid "Преображення Господнє"
+msgid "Підтвердження пароля"
+msgstr "Преображення Господнє"
+
+#: .\templates\register.html:71
 msgid "Повторіть пароль"
 msgstr "Повторіть пароль"
+
+#: .\templates\register.html:82
+msgid "Зареєструватися"
+msgstr "Зареєструватися"
+
+#: .\templates\register.html:87
+#, fuzzy
+#| msgid "Немаєте акаунту?"
+msgid "Вже є акаунт?"
+msgstr "Немаєте акаунту?"
+
+#: .\templates\schedule.html:14
+msgid "Розклад літургій на"
+msgstr "Розклад літургій на"
+
+#: .\templates\schedule.html:45
+msgid "У цьому місяці ще немає запланованих подій."
+msgstr "У цьому місяці ще немає запланованих подій."

@@ -1,208 +1,462 @@
 msgid ""
 msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-24 02:26+0300\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-msgid "Виберіть богослужіння"
-msgstr "Gottesdienst auswählen"
-msgid "Божественна літургія"
-msgstr "Göttliche Liturgie"
-msgid "Молебень з акафістом"
-msgstr "Moleben mit Akathist"
-msgid "Молебень"
-msgstr "Moleben"
-msgid "Вечірня"
-msgstr "Vesper"
-msgid "Утреня"
-msgstr "Matutin"
-msgid "Сповідь"
-msgstr "Beichte"
-msgid "Панахида"
-msgstr "Panichida"
-msgid "Молитовне правило"
-msgstr "Gebetsregel"
-msgid "Парафіяльна зустріч"
-msgstr "Pfarrtreffen"
 
+#: .\TozymChurch_APP\forms.py:14 .\TozymChurch_APP\models.py:45
+msgid "Дата"
+msgstr "Datum"
+
+#: .\TozymChurch_APP\forms.py:15 .\TozymChurch_APP\models.py:49
+msgid "Час"
+msgstr "Uhrzeit"
+
+#: .\TozymChurch_APP\forms.py:16 .\TozymChurch_APP\models.py:58
+msgid "День тижня"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:17 .\TozymChurch_APP\models.py:70
+#: .\templates\schedule.html:13
+msgid "Богослужіння"
+msgstr "Gottesdienste"
+
+#: .\TozymChurch_APP\forms.py:18 .\TozymChurch_APP\models.py:64
+msgid "Свято"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:19 .\TozymChurch_APP\models.py:75
+msgid "Назва"
+msgstr "Titel"
+
+#: .\TozymChurch_APP\forms.py:20 .\TozymChurch_APP\models.py:79
+msgid "Опис"
+msgstr "Beschreibung"
+
+#: .\TozymChurch_APP\forms.py:28
+msgid "Необов’язково, якщо вибрано свято або богослужіння"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:29
+msgid "Додаткова інформація (необов’язково)"
+msgstr ""
+
+#: .\TozymChurch_APP\forms.py:35
+#, fuzzy
+#| msgid "Виберіть богослужіння"
+msgid "Введіть назву або виберіть богослужіння чи свято."
+msgstr "Gottesdienst auswählen"
+
+#: .\TozymChurch_APP\models.py:10
 msgid "Понеділок"
 msgstr "Montag"
+
+#: .\TozymChurch_APP\models.py:11
 msgid "Вівторок"
 msgstr "Dienstag"
+
+#: .\TozymChurch_APP\models.py:12
 msgid "Середа"
 msgstr "Mittwoch"
+
+#: .\TozymChurch_APP\models.py:13
 msgid "Четвер"
 msgstr "Donnerstag"
+
+#: .\TozymChurch_APP\models.py:14
 msgid "П'ятниця"
 msgstr "Freitag"
+
+#: .\TozymChurch_APP\models.py:15
 msgid "Субота"
 msgstr "Samstag"
+
+#: .\TozymChurch_APP\models.py:16
 msgid "Неділя"
 msgstr "Sonntag"
+
+#: .\TozymChurch_APP\models.py:19
 msgid "Без свята"
 msgstr "Kein Fest"
+
+#: .\TozymChurch_APP\models.py:20
 msgid "Різдво Христове"
 msgstr "Weihnachten"
+
+#: .\TozymChurch_APP\models.py:21
 msgid "Богоявлення"
 msgstr "Erscheinung des Herrn"
+
+#: .\TozymChurch_APP\models.py:22
 msgid "Благовіщення"
 msgstr "Verkündigung des Herrn"
+
+#: .\TozymChurch_APP\models.py:23
 msgid "Вербна неділя"
 msgstr "Palmsonntag"
+
+#: .\TozymChurch_APP\models.py:24
 msgid "Великдень"
 msgstr "Ostern"
+
+#: .\TozymChurch_APP\models.py:25
 msgid "Вознесіння Господнє"
 msgstr "Christi Himmelfahrt"
+
+#: .\TozymChurch_APP\models.py:26
 msgid "П'ятидесятниця"
 msgstr "Pfingsten"
+
+#: .\TozymChurch_APP\models.py:27
 msgid "Преображення Господнє"
 msgstr "Verklärung des Herrn"
+
+#: .\TozymChurch_APP\models.py:28
 msgid "Успіння Богородиці"
 msgstr "Entschlafung der Gottesmutter"
+
+#: .\TozymChurch_APP\models.py:29
 msgid "Собор Архангела Михаїла"
 msgstr "Synaxis des Erzengels Michael"
 
-msgid "Головна"
-msgstr "Startseite"
-msgid "Інформація"
-msgstr "Informationen"
-msgid "Розклад"
-msgstr "Zeitplan"
-msgid "Церква Тозим"
-msgstr "Kirche Tozym"
-msgid "Подивитися розклад"
-msgstr "Zeitplan ansehen"
-msgid "Дізнатися більше"
-msgstr "Mehr erfahren"
-msgid "Вхід"
-msgstr "Anmelden"
-msgid "Літургії"
-msgstr "Liturgien"
-msgid "Богослужіння"
-msgstr "Gottesdienste"
-msgid "Розклад літургій на"
-msgstr "Liturgieplan für"
-msgid "Додати подію"
-msgstr "Termin hinzufügen"
+#: .\TozymChurch_APP\models.py:32
+msgid "Виберіть богослужіння"
+msgstr "Gottesdienst auswählen"
+
+#: .\TozymChurch_APP\models.py:33
+msgid "Божественна літургія"
+msgstr "Göttliche Liturgie"
+
+#: .\TozymChurch_APP\models.py:34
+msgid "Молебень з акафістом"
+msgstr "Moleben mit Akathist"
+
+#: .\TozymChurch_APP\models.py:35
+msgid "Молебень"
+msgstr "Moleben"
+
+#: .\TozymChurch_APP\models.py:36
+msgid "Вечірня"
+msgstr "Vesper"
+
+#: .\TozymChurch_APP\models.py:37
+msgid "Утреня"
+msgstr "Matutin"
+
+#: .\TozymChurch_APP\models.py:38
+msgid "Сповідь"
+msgstr "Beichte"
+
+#: .\TozymChurch_APP\models.py:39
+msgid "Панахида"
+msgstr "Panichida"
+
+#: .\TozymChurch_APP\models.py:40
+msgid "Молитовне правило"
+msgstr "Gebetsregel"
+
+#: .\TozymChurch_APP\models.py:41
+msgid "Парафіяльна зустріч"
+msgstr "Pfarrtreffen"
+
+#: .\TozymChurch_APP\models.py:46
+msgid "День, коли відзначається подія"
+msgstr ""
+
+#: .\TozymChurch_APP\models.py:50
+#, fuzzy
+#| msgid "Преображення Господнє"
+msgid "Час проведення події"
+msgstr "Verklärung des Herrn"
+
+#: .\TozymChurch_APP\models.py:76
+msgid "Наприклад: 'Новий рік', 'День народження' тощо"
+msgstr ""
+
+#: .\TozymChurch_APP\models.py:81
+msgid "Детальніший опис події (необов'язково)"
+msgstr ""
+
+#: .\TozymChurch_APP\models.py:84
+#, fuzzy
+#| msgid "Нова подія"
+msgid "Подія"
+msgstr "Neuer Termin"
+
+#: .\TozymChurch_APP\models.py:85
+msgid "Події"
+msgstr ""
+
+#: .\templates\add-event.html:4
 msgid "Нова подія"
 msgstr "Neuer Termin"
-msgid "Парафіяльний календар"
-msgstr "Pfarrkalender"
-msgid "Зберегти подію"
-msgstr "Termin speichern"
-msgid "Скасувати"
-msgstr "Abbrechen"
-msgid "У цьому місяці ще немає запланованих подій."
-msgstr "Für diesen Monat sind noch keine Termine geplant."
-msgid "На цей місяць поки немає запланованих богослужінь."
-msgstr "Für diesen Monat sind noch keine Gottesdienste geplant."
-msgid "Більше"
-msgstr "Mehr"
-msgid "Інформація про громаду"
-msgstr "Über die Gemeinde"
-msgid "Молитовна служба"
-msgstr "Gebetsdienst"
-msgid "Для сімей"
-msgstr "Für Familien"
-msgid "Громадська допомога"
-msgstr "Gemeindehilfe"
-msgid "Вхід до системи"
-msgstr "Anmeldung"
-msgid "Пароль"
-msgstr "Passwort"
-msgid "Увійти"
-msgstr "Anmelden"
-msgid "Ім'я користувача"
-msgstr "Benutzername"
-msgid "Немаєте акаунту?"
-msgstr "Noch kein Konto?"
-msgid "Зареєструйтеся"
-msgstr "Registrieren"
-msgid "Створення акаунта"
-msgstr "Konto erstellen"
-msgid "Зареєструватися"
-msgstr "Registrieren"
-msgid "Січень"
-msgstr "Januar"
-msgid "Лютий"
-msgstr "Februar"
-msgid "Березень"
-msgstr "März"
-msgid "Квітень"
-msgstr "April"
-msgid "Травень"
-msgstr "Mai"
-msgid "Червень"
-msgstr "Juni"
-msgid "Липень"
-msgstr "Juli"
-msgid "Серпень"
-msgstr "August"
-msgid "Вересень"
-msgstr "September"
-msgid "Жовтень"
-msgstr "Oktober"
-msgid "Листопад"
-msgstr "November"
-msgid "Грудень"
-msgstr "Dezember"
-msgid "Православна парафія на честь святого Архангела Михаїла"
-msgstr "Orthodoxe Pfarrei zu Ehren des Erzengels Michael"
-msgid "Номери банківських рахунків"
-msgstr "Bankkontonummern"
-msgid "Контакти"
-msgstr "Kontakt"
-msgid "Адреса"
-msgstr "Adresse"
-msgid "Телефон"
-msgstr "Telefon"
-msgid "Мова"
-msgstr "Sprache"
+
+#: .\templates\add-event.html:4 .\templates\base.html:8
+#: .\templates\base.html:542 .\templates\home.html:4
+#: .\templates\information.html:4 .\templates\login.html:4
+#: .\templates\register.html:4 .\templates\schedule.html:4
 msgid "Тожимська православна церква"
 msgstr "Orthodoxe Kirche von Tożym"
-msgid "Назва польською"
-msgstr "Titel auf Polnisch"
-msgid "Назва російською"
-msgstr "Titel auf Russisch"
-msgid "Назва німецькою"
-msgstr "Titel auf Deutsch"
-msgid "Назва англійською"
-msgstr "Titel auf Englisch"
-msgid "Опис польською"
-msgstr "Beschreibung auf Polnisch"
-msgid "Опис російською"
-msgstr "Beschreibung auf Russisch"
-msgid "Опис німецькою"
-msgstr "Beschreibung auf Deutsch"
-msgid "Опис англійською"
-msgstr "Beschreibung auf Englisch"
-msgid "Дата"
-msgstr "Datum"
-msgid "Час"
-msgstr "Uhrzeit"
-msgid "Назва"
-msgstr "Titel"
-msgid "Опис"
-msgstr "Beschreibung"
+
+#: .\templates\add-event.html:9
+msgid "Парафіяльний календар"
+msgstr "Pfarrkalender"
+
+#: .\templates\add-event.html:10 .\templates\schedule.html:17
+msgid "Додати подію"
+msgstr "Termin hinzufügen"
+
+#: .\templates\add-event.html:11
 msgid "Заповніть дані про богослужіння, зустріч або іншу подію громади."
-msgstr "Geben Sie die Angaben zum Gottesdienst, Treffen oder anderen Gemeindetermin ein."
-msgid "Створіть акаунт, щоб додавати події до розкладу"
-msgstr "Erstellen Sie ein Konto, um Termine zum Zeitplan hinzuzufügen"
+msgstr ""
+"Geben Sie die Angaben zum Gottesdienst, Treffen oder anderen Gemeindetermin "
+"ein."
+
+#: .\templates\add-event.html:27
+msgid "Зберегти подію"
+msgstr "Termin speichern"
+
+#: .\templates\add-event.html:28
+msgid "Скасувати"
+msgstr "Abbrechen"
+
+#: .\templates\base.html:544 .\templates\home.html:4
+msgid "Головна"
+msgstr "Startseite"
+
+#: .\templates\base.html:545 .\templates\information.html:4
+msgid "Інформація"
+msgstr "Informationen"
+
+#: .\templates\base.html:546 .\templates\schedule.html:4
+msgid "Розклад"
+msgstr "Zeitplan"
+
+#: .\templates\base.html:548
+msgid "Мова"
+msgstr "Sprache"
+
+#: .\templates\base.html:570
+msgid "Православна парафія на честь святого Архангела Михаїла"
+msgstr "Orthodoxe Pfarrei zu Ehren des Erzengels Michael"
+
+#: .\templates\base.html:571
+msgid "Torzym, Polska"
+msgstr ""
+
+#: .\templates\base.html:575
+msgid "Номери банківських рахунків"
+msgstr "Bankkontonummern"
+
+#: .\templates\base.html:583
+msgid "Контакти"
+msgstr "Kontakt"
+
+#: .\templates\base.html:584
+msgid "ul. Sulęcińska 8, 66-235 Torzym, Polska."
+msgstr ""
+
+#: .\templates\base.html:585
+msgid "Телефон"
+msgstr "Telefon"
+
+#: .\templates\home.html:15
+#, fuzzy
+#| msgid "Православна парафія на честь святого Архангела Михаїла"
+msgid "Православна парафія в Тожимі"
+msgstr "Orthodoxe Pfarrei zu Ehren des Erzengels Michael"
+
+#: .\templates\home.html:18
+msgid "Подивитися розклад"
+msgstr "Zeitplan ansehen"
+
+#: .\templates\home.html:19
+msgid "Дізнатися більше"
+msgstr "Mehr erfahren"
+
+#: .\templates\home.html:20 .\templates\login.html:4
+msgid "Вхід"
+msgstr "Anmelden"
+
+#: .\templates\home.html:28
+msgid "Літургії"
+msgstr "Liturgien"
+
+#: .\templates\home.html:42
+msgid "На цей місяць поки немає запланованих богослужінь."
+msgstr "Für diesen Monat sind noch keine Gottesdienste geplant."
+
+#: .\templates\home.html:44
+msgid "Більше"
+msgstr "Mehr"
+
+#: .\templates\information.html:8
+msgid "Інформація про громаду"
+msgstr "Über die Gemeinde"
+
+#: .\templates\information.html:11
+msgid ""
+"Православна парафія святого Архангела Михаїла в Тожимі виникла у 1948 році "
+"внаслідок примусового переселення українців та лемків із їхніх етнічних "
+"земель під час військово-політичної акції «Вісла» 1947 року. Опинившись на "
+"заході Польщі, депортовані віряни отримали покинуту німецьку протестантську "
+"цвинтарну каплицю XIX століття та самотужки переобладнали її під східний "
+"обряд, виготовивши перший скромний іконостас."
+msgstr ""
+"Die orthodoxe Pfarrei des Heiligen Erzengels Michael in Tochim wurde 1948 "
+"infolge der Zwangsumsiedlung von Ukrainern und Lemken von ihren ethnischen "
+"Gebieten während der militärisch-politischen Aktion Weichsel von 1947 "
+"gegründet. In Westpolen angekommen, erhielten die deportierten Gläubigen "
+"eine verlassene deutsche protestantische Friedhofskapelle aus dem 19. "
+"Jahrhundert und bauten sie eigenständig für den östlichen Ritus um, wobei "
+"sie die erste bescheidene Ikonostase anfertigten."
+
+#: .\templates\information.html:14
+msgid ""
+"Протягом другої половини XX століття громада розвивала свій храм: у 1982 "
+"році до нього добудували притвор для надання традиційних архітектурних "
+"обрисів, згодом встановили історичний іконостас із міста Гожув-"
+"Велькопольський, а у 1994 році провели капітальний ремонт будівлі."
+msgstr ""
+"In der zweiten Hälfte des 20. Jahrhunderts entwickelte die Gemeinde ihre "
+"Kirche weiter: 1982 wurde ein Vorbau angebaut, um ihr traditionelle "
+"architektonische Formen zu verleihen, später wurde eine historische "
+"Ikonostase aus der Stadt Gorzów Wielkopolski aufgestellt, und 1994 wurde das "
+"Gebäude umfassend renoviert."
+
+#: .\templates\information.html:17
+msgid ""
+"Нова сторінка в житті громади розпочалася на початку XXI століття, коли "
+"душпастирську опіку над нею перейняв священник Михайло Миколайович Коваль "
+"(ks. Michał Koval). Попри те, що парафія залишалася малочисельною, завдяки "
+"зусиллям та самовідданій праці отця Михайла релігійне життя тут помітно "
+"активізувалося."
+msgstr ""
+"Ein neues Kapitel im Leben der Gemeinde begann Anfang des 21. Jahrhunderts, "
+"als die seelsorgerische Betreuung von Priester Michael Koval (ks. Michał "
+"Koval) übernommen wurde. Obwohl die Pfarrei klein blieb, belebte sich das "
+"religiöse Leben dank der Bemühungen und des selbstlosen Einsatzes von Pater "
+"Michael spürbar."
+
+#: .\templates\information.html:20
+msgid ""
+"Саме за його служіння у 2008 році громада урочисто відзначила свій 60-річний "
+"ювілей, за що отримала похвальну грамоту від архієпископа, а сам священник "
+"налагодив тісну співпрацю з місцевою польською владою. Згодом отець Михайло "
+"також очолив будівництво нового православного храму в прикордонному місті "
+"Слубіце."
+msgstr ""
+"Gerade während seines Dienstes feierte die Gemeinde 2008 feierlich ihr 60-"
+"jähriges Jubiläum, wofür sie eine Auszeichnung vom Erzbischof erhielt, und "
+"der Priester selbst baute eine enge Zusammenarbeit mit den örtlichen "
+"polnischen Behörden auf. Später leitete Pater Michael auch den Bau einer "
+"neuen orthodoxen Kirche in der Grenzstadt Słubice."
+
+#: .\templates\information.html:23
+msgid ""
+"Наступником отця Михайла на посаді настоятеля парафії став священник Даріуш "
+"Цьолка (ks. Dariusz Ciołka). Новий настоятель гідно продовжив справу свого "
+"попередника, зосередившись на збереженні духовної спадщини перших "
+"переселенців, подальшому впорядкуванні храму та духовній підтримці місцевої "
+"громади."
+msgstr ""
+"Nachfolger von Pater Michael als Pfarrer wurde Priester Dariusz Ciołka (ks. "
+"Dariusz Ciołka). Der neue Pfarrer setzte das Werk seines Vorgängers würdig "
+"fort und konzentrierte sich auf die Bewahrung des geistlichen Erbes der "
+"ersten Siedler, die weitere Instandhaltung der Kirche und die geistliche "
+"Unterstützung der örtlichen Gemeinde."
+
+#: .\templates\information.html:26
+msgid ""
+"Сьогодні ця історична парафія належить до Зеленогурського деканату "
+"Вроцлавсько-Щецинської єпархії та залишається важливим символом збереження "
+"віри, культури й стійкості духу людей, які колись пережили трагедію "
+"депортації."
+msgstr ""
+"Heute gehört diese historische Pfarrei zum Dekanat Zielona Góra der Diözese "
+"Wrocław-Szczecin und bleibt ein wichtiges Symbol für die Bewahrung des "
+"Glaubens, der Kultur und der Widerstandskraft von Menschen, die einst die "
+"Tragödie der Deportation überlebt haben."
+
+#: .\templates\login.html:12
+msgid "Вхід до системи"
+msgstr "Anmeldung"
+
+#: .\templates\login.html:25
+msgid "Помилка входу"
+msgstr ""
+
+#: .\templates\login.html:40 .\templates\register.html:30
+msgid "Ім'я користувача"
+msgstr "Benutzername"
+
+#: .\templates\login.html:48
+#, fuzzy
+#| msgid "Введіть логін"
+msgid "Введіть ім\\"
+msgstr "Benutzernamen eingeben"
+
+#: .\templates\login.html:62 .\templates\register.html:48
+msgid "Пароль"
+msgstr "Passwort"
+
+#: .\templates\login.html:70
 msgid "Введіть пароль"
 msgstr "Passwort eingeben"
+
+#: .\templates\login.html:90
+msgid "Запам'ятати мене"
+msgstr ""
+
+#: .\templates\login.html:96 .\templates\register.html:88
+msgid "Увійти"
+msgstr "Anmelden"
+
+#: .\templates\register.html:4 .\templates\register.html:12
+msgid "Створення акаунта"
+msgstr "Konto erstellen"
+
+#: .\templates\register.html:13
+msgid "Створіть акаунт, щоб додавати події до розкладу"
+msgstr "Erstellen Sie ein Konto, um Termine zum Zeitplan hinzuzufügen"
+
+#: .\templates\register.html:17
+msgid "Будь ласка, виправте помилки"
+msgstr ""
+
+#: .\templates\register.html:37
 msgid "Введіть логін"
 msgstr "Benutzernamen eingeben"
+
+#: .\templates\register.html:54
 msgid "Придумайте надійний пароль"
 msgstr "Wählen Sie ein sicheres Passwort"
+
+#: .\templates\register.html:65
+#, fuzzy
+#| msgid "Преображення Господнє"
+msgid "Підтвердження пароля"
+msgstr "Verklärung des Herrn"
+
+#: .\templates\register.html:71
 msgid "Повторіть пароль"
 msgstr "Passwort wiederholen"
-msgid "Православна парафія святого Архангела Михаїла в Тожимі виникла у 1948 році внаслідок примусового переселення українців та лемків із їхніх етнічних земель під час військово-політичної акції «Вісла» 1947 року. Опинившись на заході Польщі, депортовані віряни отримали покинуту німецьку протестантську цвинтарну каплицю XIX століття та самотужки переобладнали її під східний обряд, виготовивши перший скромний іконостас."
-msgstr "Die orthodoxe Pfarrei des Heiligen Erzengels Michael in Tochim wurde 1948 infolge der Zwangsumsiedlung von Ukrainern und Lemken von ihren ethnischen Gebieten während der militärisch-politischen Aktion Weichsel von 1947 gegründet. In Westpolen angekommen, erhielten die deportierten Gläubigen eine verlassene deutsche protestantische Friedhofskapelle aus dem 19. Jahrhundert und bauten sie eigenständig für den östlichen Ritus um, wobei sie die erste bescheidene Ikonostase anfertigten."
-msgid "Протягом другої половини XX століття громада розвивала свій храм: у 1982 році до нього добудували притвор для надання традиційних архітектурних обрисів, згодом встановили історичний іконостас із міста Гожув-Велькопольський, а у 1994 році провели капітальний ремонт будівлі."
-msgstr "In der zweiten Hälfte des 20. Jahrhunderts entwickelte die Gemeinde ihre Kirche weiter: 1982 wurde ein Vorbau angebaut, um ihr traditionelle architektonische Formen zu verleihen, später wurde eine historische Ikonostase aus der Stadt Gorzów Wielkopolski aufgestellt, und 1994 wurde das Gebäude umfassend renoviert."
-msgid "Нова сторінка в житті громади розпочалася на початку XXI століття, коли душпастирську опіку над нею перейняв священник Михайло Миколайович Коваль (ks. Michał Koval). Попри те, що парафія залишалася малочисельною, завдяки зусиллям та самовідданій праці отця Михайла релігійне життя тут помітно активізувалося."
-msgstr "Ein neues Kapitel im Leben der Gemeinde begann Anfang des 21. Jahrhunderts, als die seelsorgerische Betreuung von Priester Michael Koval (ks. Michał Koval) übernommen wurde. Obwohl die Pfarrei klein blieb, belebte sich das religiöse Leben dank der Bemühungen und des selbstlosen Einsatzes von Pater Michael spürbar."
-msgid "Саме за його служіння у 2008 році громада урочисто відзначила свій 60-річний ювілей, за що отримала похвальну грамоту від архієпископа, а сам священник налагодив тісну співпрацю з місцевою польською владою. Згодом отець Михайло також очолив будівництво нового православного храму в прикордонному місті Слубіце."
-msgstr "Gerade während seines Dienstes feierte die Gemeinde 2008 feierlich ihr 60-jähriges Jubiläum, wofür sie eine Auszeichnung vom Erzbischof erhielt, und der Priester selbst baute eine enge Zusammenarbeit mit den örtlichen polnischen Behörden auf. Später leitete Pater Michael auch den Bau einer neuen orthodoxen Kirche in der Grenzstadt Słubice."
-msgid "Наступником отця Михайла на посаді настоятеля парафії став священник Даріуш Цьолка (ks. Dariusz Ciołka). Новий настоятель гідно продовжив справу свого попередника, зосередившись на збереженні духовної спадщини перших переселенців, подальшому впорядкуванні храму та духовній підтримці місцевої громади."
-msgstr "Nachfolger von Pater Michael als Pfarrer wurde Priester Dariusz Ciołka (ks. Dariusz Ciołka). Der neue Pfarrer setzte das Werk seines Vorgängers würdig fort und konzentrierte sich auf die Bewahrung des geistlichen Erbes der ersten Siedler, die weitere Instandhaltung der Kirche und die geistliche Unterstützung der örtlichen Gemeinde."
-msgid "Сьогодні ця історична парафія належить до Зеленогурського деканату Вроцлавсько-Щецинської єпархії та залишається важливим символом збереження віри, культури й стійкості духу людей, які колись пережили трагедію депортації."
-msgstr "Heute gehört diese historische Pfarrei zum Dekanat Zielona Góra der Diözese Wrocław-Szczecin und bleibt ein wichtiges Symbol für die Bewahrung des Glaubens, der Kultur und der Widerstandskraft von Menschen, die einst die Tragödie der Deportation überlebt haben."
+
+#: .\templates\register.html:82
+msgid "Зареєструватися"
+msgstr "Registrieren"
+
+#: .\templates\register.html:87
+#, fuzzy
+#| msgid "Немаєте акаунту?"
+msgid "Вже є акаунт?"
+msgstr "Noch kein Konto?"
+
+#: .\templates\schedule.html:14
+msgid "Розклад літургій на"
+msgstr "Liturgieplan für"
+
+#: .\templates\schedule.html:45
+msgid "У цьому місяці ще немає запланованих подій."
+msgstr "Für diesen Monat sind noch keine Termine geplant."
