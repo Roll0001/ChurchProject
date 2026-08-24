@@ -78,11 +78,14 @@
                             {% endif %}
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100 py-2 mb-3">
-                            {% translate "Зареєструватися" %}
-                        </button>
+X
 
-
+                        <div class="text-center">
+                            <p class="text-muted mb-0">
+                                {% translate "Вже є акаунт?" %}
+                                <a href="{% url 'login' %}" class="text-decoration-none fw-bold">{% translate "Увійти" %}</a>
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>
